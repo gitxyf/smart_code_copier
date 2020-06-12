@@ -15,5 +15,11 @@ Smart Code Copier是一个好用的源码拷贝工具，提供功能：
 - 整个目录的转换
 - 指定`\t`对齐到的空格长度
 
+## 注意
+如果你的源文件是UTF-8编码、中文显示正确、仅需要替换`\t`为空格、处于Linux环境下，则可直接使用`expand`命令。例如：
+```bash
+expand -t 4 compute_flops_tf_pb.py > compute_flops_tf_pb_new.py
+```
+
 ## 协议
 MIT
